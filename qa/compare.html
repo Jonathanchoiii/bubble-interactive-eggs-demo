@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bubble heart letter QA comparison</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 32px;
+        color: #6f3450;
+        background: #f5f2f4;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      h1 {
+        margin: 0 0 24px;
+        font-size: 22px;
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        font-size: 16px;
+      }
+
+      section + section {
+        margin-top: 32px;
+      }
+
+      .pair {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      figure {
+        margin: 0;
+      }
+
+      figcaption {
+        margin-bottom: 8px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .sent {
+        width: 430px;
+        height: 720px;
+        object-fit: contain;
+        background: white;
+      }
+
+      .start {
+        width: 362px;
+        height: 362px;
+        object-fit: cover;
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>爱心回信修复对照</h1>
+    <section>
+      <h2>送达提示居中</h2>
+      <div class="pair">
+        <figure>
+          <figcaption>用户截图</figcaption>
+          <img class="sent" src="./reference-heart-sent.png" alt="" />
+        </figure>
+        <figure>
+          <figcaption>修复后</figcaption>
+          <img class="sent" src="./heart-sent-centered-mobile.jpg?v=3" alt="" />
+        </figure>
+      </div>
+    </section>
+    <section>
+      <h2>未描画起点</h2>
+      <div class="pair">
+        <figure>
+          <figcaption>用户截图</figcaption>
+          <img class="start" src="./reference-heart-start.png" alt="" />
+        </figure>
+        <figure>
+          <figcaption>修复后</figcaption>
+          <img class="start" src="./heart-tracing-start-focus.jpg?v=3" alt="" />
+        </figure>
+      </div>
+    </section>
+  </body>
+</html>
